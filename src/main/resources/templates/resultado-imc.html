@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do IMC</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <div class="resultado">
+        <h1>Resultado do IMC</h1>
+        <p>Seu IMC é: <span th:text="${imc}"></span></p>
+        <p>Situação: <span th:text="${resultado}"></span></p>
+    </div>
+    <div class="button-container">
+        <a href="/">Voltar</a>
+    </div>
+</body>
+</html>
